@@ -3,5 +3,10 @@ body{
     font-family: Verdana;
 }
 nav #menu-principal {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+}
+a[href]{
+    /*font-style: unset;*/
+    text-decoration-line:none;
+    color: green;
 }
