@@ -3,10 +3,44 @@ body{
     font-family: Verdana;
 }
 nav #menu-principal {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px;
 }
 a[href]{
-    /*font-style: unset;*/
-    text-decoration-line:none;
+    
+    text-decoration:none;
     color: green;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#menu-principal a + a::before {
+    content: " | ";
+    color: black; 
+}
+
+footer{
+    margin-top: 20px;
+    border-top: solid 1px black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse:collapse;
+  }
+
+table, th, td {
+    
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tbody:nth-child(2n) {
+    background-color: #CCC;
+}
+
+tbody:nth-child(1n) {
+    background-color: #CCF;
 }
