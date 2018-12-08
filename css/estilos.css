@@ -31,16 +31,31 @@ table {
     border-collapse:collapse;
   }
 
-table, th, td {
-    
+  
+table , th, td {
     border: 1px solid black;
     padding: 10px;
 }
 
-tbody:nth-child(2n) {
+/*La tabla cambiara de color el fondo para filas impares*/
+tbody tr:nth-child(odd) {
+    background-color: #CCF;
+}
+
+/*cambiar de color para las filas pares*/
+ tbody tr:nth-child(even) {
     background-color: #CCC;
 }
 
-tbody:nth-child(1n) {
-    background-color: #CCF;
+/*en la tabla para las filas pares al poner encima el cursor cambiara de color */
+tbody tr:nth-child(even):hover{
+    background-color: #DDD;
 }
+tbody tr:nth-child(odd):hover{
+    background-color: #DDD;
+}
+
+/*aplicar sombra a la tabla*/
+.sombra{
+    box-shadow: 2px 2px 6px rgb(0, 0, 0,0.6);
+} 
